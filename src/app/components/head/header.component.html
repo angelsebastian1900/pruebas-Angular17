@@ -1,0 +1,36 @@
+<!-- <header>
+    <nav class="menu" role="navigation">
+      <div class="menu__toggle">
+        <input type="checkbox" id="checkMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="navbar">
+          <li><a [routerLink]="['']" class="link-item">Home</a></li>
+          <li><a [routerLink]="['/products']" class="link-item"><P></P>roductos</a></li>
+          <li><a [routerLink]="['1']" class="link-item">Lista de productos</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header> -->
+  <header class="header">
+    <div class="logo">
+        <a [routerLink]="['']">
+            <img src="../../assets/img/31530356_bird_2.svg" alt="HerramientasFixs"> 
+        </a> 
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <a [routerLink]="['']">
+            <li>Nosotros</li>
+            </a>
+            <a [routerLink]="['/products']">
+                <li> Productos</li>
+            </a>
+            
+        </ul>
+
+    </nav>
+    <a href="#" class="btn"><button>Iniciar sesion</button></a>
+</header>

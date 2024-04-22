@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <br>
+            <br>
+            <h1>{{title}}</h1>
+            
+            <img rel="preload" as="image" width="300" height="300" [src]="image">
+        
+            <h4>{{description}}</h4>
+            <h2> {{price | currency:"MNX": "$": "1.2-2"}}</h2>
+            <hr>
+            <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                       
+            
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+/* .card{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; *
+    height: auto;
+}
+
+    .an{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+
+
+@media only screen and (max-width: 1302px) {
+    .an{
+    grid-template-columns: repeat(3, 1fr);}
+    
+}
+/* mobile *
+@media only screen and (max-width: 768px) {
+    .an{
+        grid-template-columns: repeat(2, 1fr);}
+} */
