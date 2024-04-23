@@ -18,16 +18,16 @@
             <tbody>
                 <!--**************jala asi | paginate: { itemsPerPage: 5, currentPage: page }-->
 
-             <tr *ngFor="let product of data | filter:page:find; ">
-                <td scope="row">{{product.id}}</td>
+             <tr *ngFor="let productP of data | filter:page:find; ">
+                <td scope="row">{{productP.id}}</td>
                 
-                <td><img rel="preload" as="image" width="60" height="60" [src]="product.image"> <!--[alt]="product.title"--></td>
+                <td><img rel="preload" as="image" width="60" height="60" [src]="productP.image"> <!--[alt]="product.title"--></td>
                  
                  
-                <td>{{product.title}}</td>
-                <td>{{product.category}}</td>
-                <td>{{product.price | currency:"MNX": "$": "1.2-2"}}</td>
-                <td><button [routerLink]="['details-product', product.id]" class="btn btn-success">Show </button></td> 
+                <td>{{productP.title}}</td>
+                <td>{{productP.category}}</td>
+                <td>{{productP.price | currency:"MNX": "$": "1.2-2"}}</td>
+                <td><button [routerLink]="['details-product', productP.id]" class="btn btn-success">Show </button></td> 
               </tr>
             </tbody>
         </table>
@@ -72,6 +72,8 @@
 
 <br>
 <br>
+
+<input type="text" placeholder="hola">
 
 <!-- <div class="container">
 <div class="row">

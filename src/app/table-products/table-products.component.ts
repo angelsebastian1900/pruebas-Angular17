@@ -56,6 +56,9 @@ export class TableProductsComponent implements OnInit{
     // )
     // let idProduct = this.route.snapshot.paramMap.get("id")
     // console.log(idProduct);
+    
+    
+  
 
     this.apiService.getData().subscribe(data => {
       this.data = data;

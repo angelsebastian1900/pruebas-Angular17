@@ -26,7 +26,7 @@ export class CardProductsComponent {
     // )
     this.apiService.getData().subscribe(data => {
       this.data = data;
-      console.log(this.data);
+      // console.log(this.data);
     })
     
   }

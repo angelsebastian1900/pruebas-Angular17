@@ -11,12 +11,13 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
 import { CardProductsComponent } from './card-products/card-products.component';
 import { HeaderComponent } from './components/head/header.component';
 import { DetailsProductsComponent } from './details-products/details-products.component';
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { FilterPipe } from './pipe/filter.pipe'; // <-- import the module
 import { FormsModule } from '@angular/forms';
 import { MatSortModule } from '@angular/material/sort';
 import {MatInputModule} from '@angular/material/input';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 
@@ -39,7 +40,13 @@ import {MatInputModule} from '@angular/material/input';
     NgxPaginationModule,
     FormsModule,  
      MatSortModule,
-     MatInputModule
+     MatInputModule,
+     ServiceWorkerModule.register('ngsw-worker.js', {
+       enabled: !isDevMode(),
+       // Register the ServiceWorker as soon as the application is stable
+       // or after 30 seconds (whichever comes first).
+       registrationStrategy: 'registerWhenStable:30000'
+     })
      
 
     

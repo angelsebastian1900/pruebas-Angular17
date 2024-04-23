@@ -17,16 +17,16 @@ export interface ModelProduct{
     rating: rate
 
 
-    // idProducto: number,
-    // clave: string,
-    // producto: string,
-    // marca: string,
-    // unidadMedida: string,
-    // existencia: number,
-    // comercioIva: number,
-    // distribuidorDctoIva: number,
-    // distribuidorIva: number,
-    // publicoIva: number,
-    // activo: boolean,
-    // descontinuado: boolean
+    idProducto: number,
+    clave: string,
+    producto: string,
+    marca: string,
+    unidadMedida: string,
+    existencia: number,
+    comercioIva: number,
+    distribuidorDctoIva: number,
+    distribuidorIva: number,
+    publicoIva: number,
+    activo: boolean,
+    descontinuado: boolean
 }
